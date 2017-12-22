@@ -9,7 +9,7 @@ Referenced [python-can](https://github.com/hardbyte/python-can).So
 
 ### Usage
 ```python
-from simplecannet.client import Tcpbus
+from simplecannet.client import TcpcanBus
 from simplecannent.message import Message
 
 bus = Tcpbus(ip="192.168.1.10", port=4001)
