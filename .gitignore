@@ -19,3 +19,6 @@ sdist/
 
 # vscode stuff
 .vscode/
+
+# etcd stuff
+default.etcd/

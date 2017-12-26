@@ -12,7 +12,7 @@ Referenced [python-can](https://github.com/hardbyte/python-can).So
 from simplecannet.client import TcpcanBus
 from simplecannent.message import Message
 
-bus = Tcpbus(ip="192.168.1.10", port=4001)
+bus = Tcpcanbus(ip="192.168.1.10", port=4001)
 msg = Message(arbitration_id=id,
                       data=data,
                       extended_id=False,
@@ -23,4 +23,7 @@ msg = Message(arbitration_id=id,
 
 # receive a meassage
 recv_msg = bus.recv()
+
+# reconnect
+bus.reconnect()
 
